@@ -1,0 +1,80 @@
+﻿<Window x:Class="Kosov_Practice5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kosov_Practice5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="CanMinimize">
+
+    <Grid>
+
+        <Grid Margin="0,0,0,410">
+            <Menu Grid.ColumnSpan="2">
+                <MenuItem Header="О программе"
+                      Click="About"/>
+
+                <MenuItem Header="Выход"
+                      Click="Exit" Height="24"/>
+            </Menu>
+        </Grid>
+
+        <TextBox x:Name="FValue"
+                 Margin="10,74,668,338"
+                 />
+
+        <TextBox x:Name="SValue"
+                 Margin="10,126,668,287"
+                 />
+
+        <TextBox x:Name="Answer"
+                 Margin="292,74,386,338" IsEnabled="False"
+                 />
+
+        <TextBox x:Name="Answer2"
+                 Margin="292,126,386,287" IsEnabled="False"
+                 />
+
+        <Button x:Name="Make"
+                Margin="150,70,533,338"
+                Content="Создать 1 пару"
+                Click="Make_Click"/>
+
+        <Button x:Name="Make2"
+                Margin="150,121,533,287"
+                Content="Содать 2 пару"
+                Click="Make2_Click"/>
+
+        <Button x:Name="Compare"
+                Margin="437,40,205,317"
+                Content="Сравнить методом"
+                Click="Compare_Click"/>
+        
+        <Button x:Name="CompareOperator"
+                Margin="437,127,205,230"
+                Content="Сравнить оператором"
+                Click="CompareOp_Click"/>
+
+        <Label Content="Первая цифра пары"
+               Margin="5,45,650,365"/>
+
+        <Label Content="Вторая цифра пары"
+               Margin="5,96,650,313"/>
+
+        <Label Content="Первая пара"
+               Margin="290,45,378,365"/>
+
+        <Label Content="Вторая пара"
+               Margin="290,96,378,313"/>
+
+        <Button Content="Изменить первую пару"
+                Click="CangeFPar"
+                Margin="254,170,386,190"/>
+
+        <TextBox x:Name="ChangeExtra"
+                 Margin="10,223,560,190" />
+
+        <TextBox x:Name="Change"
+                 Margin="10,183,560,230" />
+    </Grid>
+</Window>
